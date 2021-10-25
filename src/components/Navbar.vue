@@ -36,14 +36,20 @@
   
         <template v-slot:extension>
           <v-tabs align-with-title>
-            <v-tab>Home</v-tab>
+            <v-tabs-slider color="orange"></v-tabs-slider>
+            <v-tab>Home
+                <router-link to="/">Home</router-link>
+            </v-tab>
             <v-tab>Gallery</v-tab>
             <v-tab>Contact</v-tab>
 
             <v-spacer/>
-            <v-btn class="orange mr-1">Home</v-btn>
-            <v-btn class="orange mr-1">Callery</v-btn>
-
+            <v-btn class="orange mr-1">Home
+                <router-link to="/">Home</router-link>
+            </v-btn>
+            <v-btn class="orange mr-1">Callery
+                <router-link to="/photos">Gallery</router-link>
+            </v-btn>
           </v-tabs>
         </template>
 
@@ -53,9 +59,9 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
+//import { defineComponent } from '@vue/composition-api'
+//defineComponent
+export default ({
     setup() {
         
     },
